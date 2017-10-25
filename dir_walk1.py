@@ -10,7 +10,7 @@ def dir_walk(root, pattern='*'):
         names = os.listdir(root)
     except os.error as e:
 	raise e
-	return names
+	return result
 
     pat_list = string.splitfields(pattern, ';')
     

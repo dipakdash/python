@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Via: 1.1 192.168.10.20 (McAfee Web Gateway 7.8.0.24353), 1.1 192.168.10.10 (McAfee Web Gateway 7.8.0.24353)
+Content-Length: 25
+Proxy-Connection: Keep-Alive

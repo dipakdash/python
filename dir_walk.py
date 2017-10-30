@@ -47,6 +47,6 @@ def dir_walk( root, recurse=0, pattern='*', return_folders=0 ):
     return result
 
 if __name__ == '__main__':
-    files = dir_walk('C:/Users/ddash/Documents/Work/python/telemetry', 0, '*.gz')
+    files = dir_walk('/home/ddash', 0, '*.py')
     for file in files:
         print os.path.basename(file)

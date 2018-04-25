@@ -1,0 +1,86 @@
+
+C:\Users\ddash\Downloads\TelemetryProxy\lib>python2
+ActivePython 2.7.13.2714 (ActiveState Software Inc.) based on
+Python 2.7.13 (default, Mar 30 2017, 15:15:10) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ^Z
+
+
+C:\Users\ddash\Downloads\TelemetryProxy\lib>python
+ActivePython 3.5.3.3505 (ActiveState Software Inc.) based on
+Python 3.5.3 (default, May 16 2017, 01:12:46) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+
+>>> print(*list1)
+0 1 4 9 16
+>>> a=[1,2,3,4,5]
+>>> print(a)
+[1, 2, 3, 4, 5]
+>>> print(*a)
+1 2 3 4 5
+>>> print(*a, sep='-->')
+1-->2-->3-->4-->5
+
+>>> sys.version
+'3.5.3 (default, May 16 2017, 01:12:46) [MSC v.1900 64 bit (AMD64)]'
+>>> sys.version[0:3]
+'3.5'
+
+>>> if(sys.version[0:3] == '3.5'):
+...     print("python 3")
+...
+python 3
+
+>>> import sys
+>>> sys.version
+'2.7.13 (default, Jan 19 2017, 14:48:08) \n[GCC 6.3.0 20170118]'
+>>> sys.version[0:3]
+'2.7'
+
+>>> if(sys.version[0:3] == "2.7"):
+...     print("python 2")
+...
+python 2
+
+
+>>> list1 = map(lambda x: x**2, [y for y in map(int, input("Enter comma separated numbers: ").split(","))])
+Enter comma separated numbers: 1,2,3,4,5
+>>> print(*list1)
+1 4 9 16 25
+
+>>> list1 = map(lambda x:x**2, [y for y in map("Enter comma separated numbers: ").split(",")])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: map() requires at least two args
+>>> list1 = map(lambda x:x**2, [y for y in map(int, input("Enter comma separated numbers: ").split(","))])
+Enter comma separated numbers: 1,2,3,4,5
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'split'
+>>> list1 = map(lambda x:x**2, [y for y in map(int, raw_input("Enter comma separated numbers: ").split(","))])
+Enter comma separated numbers: 1,2,3,4,5
+>>> print(*list1)
+  File "<stdin>", line 1
+    print(*list1)
+          ^
+SyntaxError: invalid syntax
+>>> print(list1)
+[1, 4, 9, 16, 25]
+
+
+
+name1 32 company
+name2 27 intel
+
+read from file sort extract lowest and highest age
+
+
+sort a list of tuples 
+>>> list1 = [('dipak', 35),('pinu', 27),('adi', 3)]
+>>> print(list1)
+[('dipak', 35), ('pinu', 27), ('adi', 3)]
+>>> list2 = sorted(list1, key=lambda x: x[1])
+>>> print(list2)
+[('adi', 3), ('pinu', 27), ('dipak', 35)]

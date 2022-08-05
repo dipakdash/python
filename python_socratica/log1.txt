@@ -1,0 +1,4 @@
+INFO 2021-09-13 21:03:02,660 - This is info log message. logger level = 10
+WARNING 2021-09-13 21:03:02,660 - This is warning log messag. logger level = 10
+ERROR 2021-09-13 21:03:02,660 - This is error log messag. logger level = 10
+CRITICAL 2021-09-13 21:03:02,660 - This is critical log messag, logger level = 10
